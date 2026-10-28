@@ -56,5 +56,42 @@ export function CTA(){
             </div>
         </div>
         </section>}
-export function Footer(){return <footer><div className="container footer-grid"><div><Logo/><p className="mt-6">Lorem ipsum dolor sit amet consectetur. Posuere vitae lacus quis eget amet ut tristique cras.</p><div className="socials"><a href="https://facebook.com" aria-label="Facebook">f</a><a href="https://instagram.com" aria-label="Instagram">◎</a><a href="https://linkedin.com" aria-label="LinkedIn">in</a></div></div><div><h4>Popular courses</h4>{['Finance','Management','Design','Development'].map(x=><Link key={x} to={'/course-one?category='+x}>{x}</Link>)}</div><div><h4>Company</h4>{nav.slice(1).map(([x,url])=><Link key={url} to={url}>{x}</Link>)}</div><div><h4>Need help?</h4><p>Call us</p><a className="contact-link" href="tel:8881234567">(888) 123 4567</a><p className="mt-6">Need support?</p><a className="contact-link" href="mailto:info@example.com">info@example.com</a></div></div><div className="container footer-bottom"><span>© {new Date().getFullYear()} Elearna. React demonstration.</span><span>Reference design: Radiant Templates · Webflow</span></div></footer>}
-export function PageHero({eyebrow,title}){return <section className="page-hero"><div className="container"><div className="eyebrow">{eyebrow}</div><h1>{title}</h1><div className="breadcrumb"><Link to="/home-one">Home</Link><FiArrowRight/>{eyebrow||title}</div></div><span className="hero-circle"/><span className="hero-cross">✳</span></section>}
+
+export function Footer(){
+    return <footer>
+        <div className="container footer-grid"><div>
+            <Logo/>
+            <p className="mt-6">Lorem ipsum dolor sit amet consectetur. Posuere vitae lacus quis eget amet ut 
+                tristique cras.
+            </p>
+            
+            <div className="socials">
+                <a href="https://facebook.com" aria-label="Facebook">f</a>
+                <a href="https://instagram.com" aria-label="Instagram">◎</a>
+                <a href="https://linkedin.com" aria-label="LinkedIn">in</a>
+            </div>
+        </div>
+        <div><h4>Popular courses</h4>{['Finance','Management','Design','Development'].map(x=><Link key={x} 
+        to={'/course-one?category='+x}>{x}</Link>)}</div>
+        <div><h4>Company</h4>{nav.slice(1).map(([x,url])=><Link key={url} to={url}>{x}</Link>)}</div>
+        <div><h4>Need help?</h4><p>Call us</p><a className="contact-link" href="tel:8881234567">(888) 123 4567</a>
+        <p className="mt-6">Need support?</p><a className="contact-link" href="mailto:info@example.com">info@example.com</a>
+        </div>
+    </div>
+    <div className="container footer-bottom">
+        <span>© {new Date().getFullYear()} Elearna. React demonstration.</span>
+        <span>Reference design: Radiant Templates · Webflow</span>
+    </div>
+</footer>}
+
+export function PageHero({eyebrow,title}){
+    return <section className="page-hero">
+                <div className="container">
+                    <div className="eyebrow">{eyebrow}</div>
+                    <h1>{title}</h1><div className="breadcrumb">
+                        <Link to="/home-one">Home</Link><FiArrowRight/>{eyebrow||title}
+                    </div>
+                        </div>
+                <span className="hero-circle"/><span className="hero-cross">✳</span>
+            </section>
+            }

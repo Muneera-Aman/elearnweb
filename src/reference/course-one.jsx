@@ -1,14 +1,1724 @@
-import {Link} from 'react-router-dom';
-import {useReference,ReferenceProvider,ReferenceFAQ,ReferenceContactForm} from './ReferenceUI';
+import { Link } from 'react-router-dom';
+import {
+  useReference,
+  ReferenceProvider,
+  ReferenceFAQ,
+  ReferenceContactForm
+} from './ReferenceUI';
 
-export function CourseOneHero0(){const {tab,setTab,yearly,setYearly}=useReference();return (<section className={"course-one-hero"}><div className={"w-layout-blockcontainer course-one-hero-container w-container"}><div className={"w-layout-vflex course-one-hero-wrap"}><div className={"small-heading"}>{"START WITH"}</div><h1 className={"heading-one-top-gap text-white"}>{"Professional online courses"}</h1></div></div></section>);}
+export function CourseOneHero0() {
+  const { tab, setTab, yearly, setYearly } = useReference();
 
-export function CourseOneCategory1(){const {tab,setTab,yearly,setYearly}=useReference();return (<section className={"course-one-category"}><div className={"w-layout-blockcontainer container w-container"}><div className={"course-one-category-main"}><Link to={"/course-one?category=Design"} className={"course-one-category-cards w-inline-block"}><div className={"category-icons-wrap"}><img src={"/assets/66c6fb8b9d9bcd0e5de94637_Category_Icons.svg"} loading={"lazy"} width={"Auto"} height={"Auto"} alt={"Icon"} /></div><div className={"heading-six margin-bottom-five category-text"}>{"Web design and creative"}</div><div>{"8 Courses"}</div></Link><Link to={"/course-one?category=Finance"} className={"course-one-category-cards w-inline-block"}><div className={"category-icons-wrap"}><img src={"/assets/66c6fb8b98a2dc7066c693d3_Category_Icons-2.svg"} loading={"lazy"} width={"Auto"} height={"Auto"} alt={"Icon"} /></div><div className={"heading-six margin-bottom-five category-text"}>{"Finance and accounting"}</div><div>{"4 Courses"}</div></Link><Link to={"/course-one?category=Development"} className={"course-one-category-cards w-inline-block"}><div className={"category-icons-wrap"}><img src={"/assets/66c6fb8b2ae1000d4215a423_Category_Icons-3.svg"} loading={"lazy"} width={"Auto"} height={"Auto"} alt={"Icon"} /></div><div className={"heading-six margin-bottom-five category-text"}>{"IT and software"}</div><div>{"5 Courses"}</div></Link><Link to={"/course-one?category=Management"} className={"course-one-category-cards w-inline-block"}><div className={"category-icons-wrap"}><img src={"/assets/66c6fb94416128e5b4e355b0_Category_Icons-4.svg"} loading={"lazy"} width={"Auto"} height={"Auto"} alt={"Icon"} /></div><div className={"heading-six margin-bottom-five category-text"}>{"Digital marketing"}</div><div>{"4 Courses"}</div></Link><Link to={"/course-one?category=Development"} className={"course-one-category-cards w-inline-block"}><div className={"category-icons-wrap"}><img src={"/assets/66c6fb8b035ebd8829061041_Category_Icons-5.svg"} loading={"lazy"} width={"Auto"} height={"Auto"} alt={"Icon"} /></div><div className={"heading-six margin-bottom-five category-text"}>{"Web development"}</div><div>{"8 Courses"}</div></Link><Link to={"/course-one?category=Design"} className={"course-one-category-cards w-inline-block"}><div className={"category-icons-wrap"}><img src={"/assets/66c6fb8bf82fe9cef5f78d2f_Category_Icons-6.svg"} loading={"lazy"} width={"Auto"} height={"Auto"} alt={"Icon"} /></div><div className={"heading-six margin-bottom-five category-text"}>{"Content and language"}</div><div>{"3 Courses"}</div></Link></div></div></section>);}
+  return (
+    <section className={"course-one-hero"}>
+      <div className={"w-layout-blockcontainer course-one-hero-container w-container"}>
+        <div className={"w-layout-vflex course-one-hero-wrap"}>
+          <div className={"small-heading"}>{"START WITH"}</div>
 
-export function CourseOneStore2(){const {tab,setTab,yearly,setYearly}=useReference();return (<section className={"course-one-store"}><div className={"w-layout-blockcontainer container w-container"}><div className={"w-layout-vflex"}><div className={"small-heading text-dark"}>{"Online learning"}</div><h2 className={"heading-two-gap-top course-one-store-heading"}>{"Popular courses"}</h2><div className={"courses-pagination w-tabs"}><div className={"courses-tab-content w-tab-content"}><div className={"w-tab-pane w--tab-active"} style={{display:tab==="Tab 1"?"block":"none"}}><div className={"courses-cards-wrapper"}><div className={"w-dyn-list"}><div role={"list"} className={"w-dyn-items"}><div role={"listitem"} className={"w-dyn-item"}><div className={"courser-card-one"}><Link to={"/courses/8"} className={"course-card-image-wrapper w-inline-block"}><img className={"course-card-image"} src={"/assets/6710bb2b1bfbb88a06696c70_Course_Image-4.webp"} width={"410"} height={"254"} alt={"Course Image"} loading={"lazy"} /></Link><div className={"w-layout-vflex course-content"}><div className={"small-shot-heading margin-bottom-twenty"}>{"Finance"}</div><div className={"heading-four course-heading"}>{"Understanding corporate finance and investments"}</div><div className={"w-layout-hflex course-rating"}><img width={"79"} height={"19"} alt={""} src={"/assets/66c6fb8b857efb6c4c737b5d_Rating.svg"} loading={"lazy"} /><div className={"small-shot-heading small-heading-body-color"}>{"4.88 (210)"}</div></div><div className={"cards-wrap"}><div className={"course-cards-button-wrapper course-cards-information"}><div className={"cards-button-left"}><div className={"w-layout-hflex course-information"}><img width={"16"} height={"16"} alt={"Icon"} src={"/assets/66c6fb8b420a4f79326c2e96_Books.svg"} loading={"lazy"} /><div className={"menu-font text-dark"}>{"10 Lessons"}</div></div></div><div className={"cards-button-right"}><div className={"w-layout-hflex course-information align-right"}><img width={"12"} height={"14"} alt={"Icon"} src={"/assets/66c6fb8b73655bcf79451768_Person.svg"} loading={"lazy"} /><div className={"menu-font text-dark"}>{"8k Enrolled"}</div></div></div></div><div className={"course-cards-button-wrapper course-cards-button free-card"}><div className={"cards-button-left cousers-button-wrapper-border border-off"}><div className={"buttons-hover-show"}><Link to={"/courses/8"} className={"button button-yellow course-button w-inline-block"}><div>{"Course Details"}</div></Link></div></div></div></div><div className={"course-price-wrapper"}><div>{"Free"}</div></div></div></div></div></div></div><div className={"w-dyn-list"}><div role={"list"} className={"w-dyn-items"}><div role={"listitem"} className={"w-dyn-item"}><div className={"courser-card-one"}><Link to={"/courses/1"} className={"course-card-image-wrapper w-inline-block"}><img className={"course-card-image"} src={"/assets/6710bcf4976ba1d072d8b476_Course_Image-4-2.webp"} width={"410"} height={"254"} alt={"Course Image"} loading={"lazy"} /></Link><div className={"w-layout-vflex course-content"}><div className={"small-shot-heading margin-bottom-twenty"}>{"Design"}</div><div className={"heading-four course-heading"}>{"Advanced photoshop techniques for designers"}</div><div className={"w-layout-hflex course-rating"}><img width={"79"} height={"19"} alt={""} src={"/assets/66c6fb8b857efb6c4c737b5d_Rating.svg"} loading={"lazy"} /><div className={"small-shot-heading small-heading-body-color"}>{"5.00 (1.2K)"}</div></div><div className={"cards-wrap"}><div className={"course-cards-button-wrapper course-cards-information"}><div className={"cards-button-left"}><div className={"w-layout-hflex course-information"}><img width={"16"} height={"16"} alt={"Icon"} src={"/assets/66c6fb8b420a4f79326c2e96_Books.svg"} loading={"lazy"} /><div className={"menu-font text-dark"}>{"8 Lessons"}</div></div></div><div className={"cards-button-right"}><div className={"w-layout-hflex course-information align-right"}><img width={"12"} height={"14"} alt={"Icon"} src={"/assets/66c6fb8b73655bcf79451768_Person.svg"} loading={"lazy"} /><div className={"menu-font text-dark"}>{"25k Enrolled"}</div></div></div></div><div className={"course-cards-button-wrapper course-cards-button free-card"}><div className={"cards-button-left cousers-button-wrapper-border border-off"}><div className={"buttons-hover-show"}><Link to={"/courses/1"} className={"button button-yellow course-button w-inline-block"}><div>{"Course Details"}</div></Link></div></div></div></div><div className={"course-price-wrapper"}><div>{"Free"}</div></div></div></div></div></div></div><div className={"w-dyn-list"}><div role={"list"} className={"w-dyn-items"}><div role={"listitem"} className={"w-dyn-item"}><div className={"courser-card-one"}><Link to={"/courses/0"} className={"course-card-image-wrapper w-inline-block"}><img className={"course-card-image"} src={"/assets/6710c8cf232065a7046261dc_Course_Image-7.webp"} width={"410"} height={"254"} alt={"Course Image"} loading={"lazy"} /></Link><div className={"w-layout-vflex course-content"}><div className={"small-shot-heading margin-bottom-twenty"}>{"Management"}</div><div className={"heading-four course-heading"}>{"Crisis management and problem-solving strategies"}</div><div className={"w-layout-hflex course-rating"}><img width={"79"} height={"19"} alt={""} src={"/assets/66c6fb8b857efb6c4c737b5d_Rating.svg"} loading={"lazy"} /><div className={"small-shot-heading small-heading-body-color"}>{"4.88 (210)"}</div></div><div className={"cards-wrap"}><div className={"course-cards-button-wrapper course-cards-information"}><div className={"cards-button-left"}><div className={"w-layout-hflex course-information"}><img width={"16"} height={"16"} alt={"Icon"} src={"/assets/66c6fb8b420a4f79326c2e96_Books.svg"} loading={"lazy"} /><div className={"menu-font text-dark"}>{"6 Lessons"}</div></div></div><div className={"cards-button-right"}><div className={"w-layout-hflex course-information align-right"}><img width={"12"} height={"14"} alt={"Icon"} src={"/assets/66c6fb8b73655bcf79451768_Person.svg"} loading={"lazy"} /><div className={"menu-font text-dark"}>{"8k Enrolled"}</div></div></div></div><div className={"course-cards-button-wrapper course-cards-button free-card"}><div className={"cards-button-left cousers-button-wrapper-border border-off"}><div className={"buttons-hover-show"}><Link to={"/courses/0"} className={"button button-yellow course-button w-inline-block"}><div>{"Course Details"}</div></Link></div></div></div></div><div className={"course-price-wrapper"}><div>{"Free"}</div></div></div></div></div></div></div><div className={"w-dyn-list"}><div role={"list"} className={"w-dyn-items"}><div role={"listitem"} className={"w-dyn-item"}><div className={"courser-card-one"}><Link to={"/course-one"} className={"course-card-image-wrapper w-inline-block"}><img className={"course-card-image"} src={"/assets/66eb9dfb3e87f8984b5a15b6_Course_Small_Image.webp"} width={"410"} height={"254"} alt={"Building single page applications with angular"} loading={"lazy"} /></Link><div className={"w-layout-vflex course-content"}><div className={"small-shot-heading margin-bottom-twenty"}>{"Development"}</div><div className={"heading-four course-heading"}>{"Building single page applications with angular"}</div><div className={"w-layout-hflex course-rating"}><img width={"79"} height={"19"} alt={""} src={"/assets/66c6fb8b857efb6c4c737b5d_Rating.svg"} loading={"lazy"} /><div className={"small-shot-heading small-heading-body-color"}>{"5.00 (328)"}</div></div><div className={"cards-wrap"}><div className={"course-cards-button-wrapper course-cards-information"}><div className={"cards-button-left"}><div className={"w-layout-hflex course-information"}><img width={"16"} height={"16"} alt={"Icon"} src={"/assets/66c6fb8b420a4f79326c2e96_Books.svg"} loading={"lazy"} /><div className={"menu-font text-dark"}>{"6 Lessons"}</div></div></div><div className={"cards-button-right"}><div className={"w-layout-hflex course-information align-right"}><img width={"12"} height={"14"} alt={"Icon"} src={"/assets/66c6fb8b73655bcf79451768_Person.svg"} loading={"lazy"} /><div className={"menu-font text-dark"}>{"12k Enrolled"}</div></div></div></div><div className={"course-cards-button-wrapper course-cards-button free-card"}><div className={"cards-button-left cousers-button-wrapper-border border-off"}><div className={"buttons-hover-show"}><Link to={"/course-one"} className={"button button-yellow course-button w-inline-block"}><div>{"Course Details"}</div></Link></div></div></div></div><div className={"course-price-wrapper"}><div>{"Free"}</div></div></div></div></div></div></div><div className={"w-dyn-list"}><div role={"list"} className={"w-dyn-items"}><div role={"listitem"} className={"w-dyn-item"}><div className={"courser-card-one"}><Link to={"/courses/3"} className={"course-card-image-wrapper w-inline-block"}><img className={"course-card-image"} src={"/assets/66eb9e1184c0c12d2244968d_Course_Small_Image-9.webp"} width={"410"} height={"254"} alt={"Database integration with MongoDB"} loading={"lazy"} /></Link><div className={"w-layout-vflex course-content"}><div className={"small-shot-heading margin-bottom-twenty"}>{"Development"}</div><div className={"heading-four course-heading"}>{"Database integration with MongoDB"}</div><div className={"w-layout-hflex course-rating"}><img width={"79"} height={"19"} alt={""} src={"/assets/66c6fb8b857efb6c4c737b5d_Rating.svg"} loading={"lazy"} /><div className={"small-shot-heading small-heading-body-color"}>{"4.49 (756)"}</div></div><div className={"cards-wrap"}><div className={"course-cards-button-wrapper course-cards-information"}><div className={"cards-button-left"}><div className={"w-layout-hflex course-information"}><img width={"16"} height={"16"} alt={"Icon"} src={"/assets/66c6fb8b420a4f79326c2e96_Books.svg"} loading={"lazy"} /><div className={"menu-font text-dark"}>{"10 Lessons"}</div></div></div><div className={"cards-button-right"}><div className={"w-layout-hflex course-information align-right"}><img width={"12"} height={"14"} alt={"Icon"} src={"/assets/66c6fb8b73655bcf79451768_Person.svg"} loading={"lazy"} /><div className={"menu-font text-dark"}>{"7k Enrolled"}</div></div></div></div><div className={"course-cards-button-wrapper course-cards-button"}><div className={"cards-button-left cousers-button-wrapper-border"}><div className={"buttons-hover-show"}><Link to={"/courses/3"} className={"button button-yellow course-button w-inline-block"}><div>{"Course Details"}</div></Link></div></div><div className={"cards-button-right"}><div className={"buttons-hover-show"}><Link to={"/courses/3"} className={"button button-border-off course-button w-inline-block"}><div>{"Enroll"}</div></Link></div></div></div></div><div className={"course-price-wrapper"}><div>{"$59 "}</div></div></div></div></div></div></div><div className={"w-dyn-list"}><div role={"list"} className={"w-dyn-items"}><div role={"listitem"} className={"w-dyn-item"}><div className={"courser-card-one"}><Link to={"/courses/5"} className={"course-card-image-wrapper w-inline-block"}><img className={"course-card-image"} src={"/assets/66eb9e61096e930736b651e4_Course_Small_Image-5.webp"} width={"410"} height={"254"} alt={"Full-stack development with the MERN stack"} loading={"lazy"} /></Link><div className={"w-layout-vflex course-content"}><div className={"small-shot-heading margin-bottom-twenty"}>{"Development"}</div><div className={"heading-four course-heading"}>{"Full-stack development with the MERN stack"}</div><div className={"w-layout-hflex course-rating"}><img width={"79"} height={"19"} alt={""} src={"/assets/66c6fb8b857efb6c4c737b5d_Rating.svg"} loading={"lazy"} /><div className={"small-shot-heading small-heading-body-color"}>{"5.00 (985)"}</div></div><div className={"cards-wrap"}><div className={"course-cards-button-wrapper course-cards-information"}><div className={"cards-button-left"}><div className={"w-layout-hflex course-information"}><img width={"16"} height={"16"} alt={"Icon"} src={"/assets/66c6fb8b420a4f79326c2e96_Books.svg"} loading={"lazy"} /><div className={"menu-font text-dark"}>{"12 Lessons"}</div></div></div><div className={"cards-button-right"}><div className={"w-layout-hflex course-information align-right"}><img width={"12"} height={"14"} alt={"Icon"} src={"/assets/66c6fb8b73655bcf79451768_Person.svg"} loading={"lazy"} /><div className={"menu-font text-dark"}>{"22k Enrolled"}</div></div></div></div><div className={"course-cards-button-wrapper course-cards-button"}><div className={"cards-button-left cousers-button-wrapper-border"}><div className={"buttons-hover-show"}><Link to={"/courses/5"} className={"button button-yellow course-button w-inline-block"}><div>{"Course Details"}</div></Link></div></div><div className={"cards-button-right"}><div className={"buttons-hover-show"}><Link to={"/courses/5"} className={"button button-border-off course-button w-inline-block"}><div>{"Enroll"}</div></Link></div></div></div></div><div className={"course-price-wrapper"}><div>{"$72 "}</div></div></div></div></div></div></div></div></div><div className={"w-tab-pane"} style={{display:tab==="Tab 2"?"block":"none"}}><div className={"courses-cards-wrapper"}><div className={"w-dyn-list"}><div role={"list"} className={"w-dyn-items"}><div role={"listitem"} className={"w-dyn-item"}><div className={"courser-card-one"}><Link to={"/course-one"} className={"course-card-image-wrapper w-inline-block"}><img className={"course-card-image"} src={"/assets/66eb9ece25b132baef1462d5_Course_Small_Image-3.webp"} width={"410"} height={"254"} alt={""} loading={"lazy"} /></Link><div className={"w-layout-vflex course-content"}><div className={"small-shot-heading margin-bottom-twenty"}>{"Finance"}</div><div className={"heading-four course-heading"}>{"The complete guide to personal and business finance"}</div><div className={"w-layout-hflex course-rating"}><img width={"79"} height={"19"} alt={""} src={"/assets/66c6fb8b857efb6c4c737b5d_Rating.svg"} loading={"lazy"} /><div className={"small-shot-heading small-heading-body-color"}>{"4.88 (210)"}</div></div><div className={"cards-wrap"}><div className={"course-cards-button-wrapper course-cards-information"}><div className={"cards-button-left"}><div className={"w-layout-hflex course-information"}><img width={"16"} height={"16"} alt={"Icon"} src={"/assets/66c6fb8b420a4f79326c2e96_Books.svg"} loading={"lazy"} /><div className={"menu-font text-dark"}>{"10 Lessons"}</div></div></div><div className={"cards-button-right"}><div className={"w-layout-hflex course-information align-right"}><img width={"12"} height={"14"} alt={"Icon"} src={"/assets/66c6fb8b73655bcf79451768_Person.svg"} loading={"lazy"} /><div className={"menu-font text-dark"}>{"8k Enrolled"}</div></div></div></div><div className={"course-cards-button-wrapper course-cards-button"}><div className={"cards-button-left cousers-button-wrapper-border"}><div className={"buttons-hover-show"}><Link to={"/course-one"} className={"button button-yellow course-button w-inline-block"}><div>{"Course Details"}</div></Link></div></div><div className={"cards-button-right"}><div className={"buttons-hover-show"}><Link to={"/course-one"} className={"button button-border-off course-button w-inline-block"}><div>{"Enroll"}</div></Link></div></div></div></div><div className={"course-price-wrapper"}><div>{"$99 "}</div></div></div></div></div></div></div><div className={"w-dyn-list"}><div role={"list"} className={"w-dyn-items"}><div role={"listitem"} className={"w-dyn-item"}><div className={"courser-card-one"}><Link to={"/courses/7"} className={"course-card-image-wrapper w-inline-block"}><img className={"course-card-image"} src={"/assets/66eba4fcd2cfcf11fe70ccfe_Course_Small_Image-4.webp"} width={"410"} height={"254"} alt={"Learn interactive Web Design by building real projects"} loading={"lazy"} /></Link><div className={"w-layout-vflex course-content"}><div className={"small-shot-heading margin-bottom-twenty"}>{"Design"}</div><div className={"heading-four course-heading"}>{"Learn interactive Web Design by building real projects"}</div><div className={"w-layout-hflex course-rating"}><img width={"79"} height={"19"} alt={""} src={"/assets/66c6fb8b857efb6c4c737b5d_Rating.svg"} loading={"lazy"} /><div className={"small-shot-heading small-heading-body-color"}>{"4.49 (756)"}</div></div><div className={"cards-wrap"}><div className={"course-cards-button-wrapper course-cards-information"}><div className={"cards-button-left"}><div className={"w-layout-hflex course-information"}><img width={"16"} height={"16"} alt={"Icon"} src={"/assets/66c6fb8b420a4f79326c2e96_Books.svg"} loading={"lazy"} /><div className={"menu-font text-dark"}>{"12 Lessons"}</div></div></div><div className={"cards-button-right"}><div className={"w-layout-hflex course-information align-right"}><img width={"12"} height={"14"} alt={"Icon"} src={"/assets/66c6fb8b73655bcf79451768_Person.svg"} loading={"lazy"} /><div className={"menu-font text-dark"}>{"23k Enrolled"}</div></div></div></div><div className={"course-cards-button-wrapper course-cards-button"}><div className={"cards-button-left cousers-button-wrapper-border"}><div className={"buttons-hover-show"}><Link to={"/courses/7"} className={"button button-yellow course-button w-inline-block"}><div>{"Course Details"}</div></Link></div></div><div className={"cards-button-right"}><div className={"buttons-hover-show"}><Link to={"/courses/7"} className={"button button-border-off course-button w-inline-block"}><div>{"Enroll"}</div></Link></div></div></div></div><div className={"course-price-wrapper"}><div>{"$79 "}</div></div></div></div></div></div></div><div className={"w-dyn-list"}><div role={"list"} className={"w-dyn-items"}><div role={"listitem"} className={"w-dyn-item"}><div className={"courser-card-one"}><Link to={"/course-one"} className={"course-card-image-wrapper w-inline-block"}><img className={"course-card-image"} src={"/assets/66eb9fb02faddeb03288c28e_Course_Small_Image-2.webp"} width={"410"} height={"254"} alt={"Course Details"} loading={"lazy"} /></Link><div className={"w-layout-vflex course-content"}><div className={"small-shot-heading margin-bottom-twenty"}>{"Management"}</div><div className={"heading-four course-heading"}>{"Grow your brand and reach your audience"}</div><div className={"w-layout-hflex course-rating"}><img width={"79"} height={"19"} alt={""} src={"/assets/66c6fb8b857efb6c4c737b5d_Rating.svg"} loading={"lazy"} /><div className={"small-shot-heading small-heading-body-color"}>{"4.88 (210)"}</div></div><div className={"cards-wrap"}><div className={"course-cards-button-wrapper course-cards-information"}><div className={"cards-button-left"}><div className={"w-layout-hflex course-information"}><img width={"16"} height={"16"} alt={"Icon"} src={"/assets/66c6fb8b420a4f79326c2e96_Books.svg"} loading={"lazy"} /><div className={"menu-font text-dark"}>{"10 Lessons"}</div></div></div><div className={"cards-button-right"}><div className={"w-layout-hflex course-information align-right"}><img width={"12"} height={"14"} alt={"Icon"} src={"/assets/66c6fb8b73655bcf79451768_Person.svg"} loading={"lazy"} /><div className={"menu-font text-dark"}>{"8k Enrolled"}</div></div></div></div><div className={"course-cards-button-wrapper course-cards-button"}><div className={"cards-button-left cousers-button-wrapper-border"}><div className={"buttons-hover-show"}><Link to={"/course-one"} className={"button button-yellow course-button w-inline-block"}><div>{"Course Details"}</div></Link></div></div><div className={"cards-button-right"}><div className={"buttons-hover-show"}><Link to={"/course-one"} className={"button button-border-off course-button w-inline-block"}><div>{"Enroll"}</div></Link></div></div></div></div><div className={"course-price-wrapper"}><div>{"$49 "}</div></div></div></div></div></div></div><div className={"w-dyn-list"}><div role={"list"} className={"w-dyn-items"}><div role={"listitem"} className={"w-dyn-item"}><div className={"courser-card-one"}><Link to={"/courses/6"} className={"course-card-image-wrapper w-inline-block"}><img className={"course-card-image"} src={"/assets/66fe66442929de6e874b3284_Course_Image.webp"} width={"410"} height={"254"} alt={"Design systems and pattern libraries"} loading={"lazy"} /></Link><div className={"w-layout-vflex course-content"}><div className={"small-shot-heading margin-bottom-twenty"}>{"Design"}</div><div className={"heading-four course-heading"}>{"Design systems and pattern libraries"}</div><div className={"w-layout-hflex course-rating"}><img width={"79"} height={"19"} alt={""} src={"/assets/66c6fb8b857efb6c4c737b5d_Rating.svg"} loading={"lazy"} /><div className={"small-shot-heading small-heading-body-color"}>{"5.00 (1.2K)"}</div></div><div className={"cards-wrap"}><div className={"course-cards-button-wrapper course-cards-information"}><div className={"cards-button-left"}><div className={"w-layout-hflex course-information"}><img width={"16"} height={"16"} alt={"Icon"} src={"/assets/66c6fb8b420a4f79326c2e96_Books.svg"} loading={"lazy"} /><div className={"menu-font text-dark"}>{"8 Lessons"}</div></div></div><div className={"cards-button-right"}><div className={"w-layout-hflex course-information align-right"}><img width={"12"} height={"14"} alt={"Icon"} src={"/assets/66c6fb8b73655bcf79451768_Person.svg"} loading={"lazy"} /><div className={"menu-font text-dark"}>{"25k Enrolled"}</div></div></div></div><div className={"course-cards-button-wrapper course-cards-button"}><div className={"cards-button-left cousers-button-wrapper-border"}><div className={"buttons-hover-show"}><Link to={"/courses/6"} className={"button button-yellow course-button w-inline-block"}><div>{"Course Details"}</div></Link></div></div><div className={"cards-button-right"}><div className={"buttons-hover-show"}><Link to={"/courses/6"} className={"button button-border-off course-button w-inline-block"}><div>{"Enroll"}</div></Link></div></div></div></div><div className={"course-price-wrapper"}><div>{"$99 "}</div></div></div></div></div></div></div><div className={"w-dyn-list"}><div role={"list"} className={"w-dyn-items"}><div role={"listitem"} className={"w-dyn-item"}><div className={"courser-card-one"}><Link to={"/courses/2"} className={"course-card-image-wrapper w-inline-block"}><img className={"course-card-image"} src={"/assets/66eb9e25c4d132b7abc4dcb2_Course_Small_Image-8.webp"} width={"410"} height={"254"} alt={"Course Details"} loading={"lazy"} /></Link><div className={"w-layout-vflex course-content"}><div className={"small-shot-heading margin-bottom-twenty"}>{"Finance"}</div><div className={"heading-four course-heading"}>{"Operations management and process improvement"}</div><div className={"w-layout-hflex course-rating"}><img width={"79"} height={"19"} alt={""} src={"/assets/66c6fb8b857efb6c4c737b5d_Rating.svg"} loading={"lazy"} /><div className={"small-shot-heading small-heading-body-color"}>{"5.00 (812)"}</div></div><div className={"cards-wrap"}><div className={"course-cards-button-wrapper course-cards-information"}><div className={"cards-button-left"}><div className={"w-layout-hflex course-information"}><img width={"16"} height={"16"} alt={"Icon"} src={"/assets/66c6fb8b420a4f79326c2e96_Books.svg"} loading={"lazy"} /><div className={"menu-font text-dark"}>{"12 Lessons"}</div></div></div><div className={"cards-button-right"}><div className={"w-layout-hflex course-information align-right"}><img width={"12"} height={"14"} alt={"Icon"} src={"/assets/66c6fb8b73655bcf79451768_Person.svg"} loading={"lazy"} /><div className={"menu-font text-dark"}>{"23k Enrolled"}</div></div></div></div><div className={"course-cards-button-wrapper course-cards-button free-card"}><div className={"cards-button-left cousers-button-wrapper-border border-off"}><div className={"buttons-hover-show"}><Link to={"/courses/2"} className={"button button-yellow course-button w-inline-block"}><div>{"Course Details"}</div></Link></div></div></div></div><div className={"course-price-wrapper"}><div>{"Free"}</div></div></div></div></div></div></div><div className={"w-dyn-list"}><div role={"list"} className={"w-dyn-items"}><div role={"listitem"} className={"w-dyn-item"}><div className={"courser-card-one"}><Link to={"/courses/4"} className={"course-card-image-wrapper w-inline-block"}><img className={"course-card-image"} src={"/assets/66eb9e363f6e47ec5245cf09_Course_Small_Image-7.webp"} width={"410"} height={"254"} alt={"Risk management and business continuity"} loading={"lazy"} /></Link><div className={"w-layout-vflex course-content"}><div className={"small-shot-heading margin-bottom-twenty"}>{"Management"}</div><div className={"heading-four course-heading"}>{"Risk management and business continuity"}</div><div className={"w-layout-hflex course-rating"}><img width={"79"} height={"19"} alt={""} src={"/assets/66c6fb8b857efb6c4c737b5d_Rating.svg"} loading={"lazy"} /><div className={"small-shot-heading small-heading-body-color"}>{"4.88 (210)"}</div></div><div className={"cards-wrap"}><div className={"course-cards-button-wrapper course-cards-information"}><div className={"cards-button-left"}><div className={"w-layout-hflex course-information"}><img width={"16"} height={"16"} alt={"Icon"} src={"/assets/66c6fb8b420a4f79326c2e96_Books.svg"} loading={"lazy"} /><div className={"menu-font text-dark"}>{"3 Lessons"}</div></div></div><div className={"cards-button-right"}><div className={"w-layout-hflex course-information align-right"}><img width={"12"} height={"14"} alt={"Icon"} src={"/assets/66c6fb8b73655bcf79451768_Person.svg"} loading={"lazy"} /><div className={"menu-font text-dark"}>{"8k Enrolled"}</div></div></div></div><div className={"course-cards-button-wrapper course-cards-button"}><div className={"cards-button-left cousers-button-wrapper-border"}><div className={"buttons-hover-show"}><Link to={"/courses/4"} className={"button button-yellow course-button w-inline-block"}><div>{"Course Details"}</div></Link></div></div><div className={"cards-button-right"}><div className={"buttons-hover-show"}><Link to={"/courses/4"} className={"button button-border-off course-button w-inline-block"}><div>{"Enroll"}</div></Link></div></div></div></div><div className={"course-price-wrapper"}><div>{"$49 "}</div></div></div></div></div></div></div></div></div></div><div className={"courses-pagination-menu w-tab-menu"}><button type="button" onClick={()=>setTab("Tab 1")} aria-pressed={tab==="Tab 1"} className={"tab-nav-link w-inline-block w-tab-link "+(tab==="Tab 1"?" w--current":"")}><div>{" 1"}</div></button><button type="button" onClick={()=>setTab("Tab 2")} aria-pressed={tab==="Tab 2"} className={"tab-nav-link w-inline-block w-tab-link"+(tab==="Tab 2"?" w--current":"")}><div>{"2"}</div></button></div></div></div></div></section>);}
+          <h1 className={"heading-one-top-gap text-white"}>
+            {"Professional online courses"}
+          </h1>
+        </div>
+      </div>
+    </section>
+  );
+}
 
-export function CtaOne3(){const {tab,setTab,yearly,setYearly}=useReference();return (<section className={"cta-one"}><div className={"w-layout-blockcontainer container w-container"}><div className={"w-layout-hflex cta-main"}><div className={"heading-three cta-heading"}>{"Are you ready to start your journey?"}</div><div className={"w-layout-hflex cta-button-wrapper"}><Link to={"/course-one"} className={"button button-border-off w-inline-block w--current"}><div>{"Browse courses"}</div></Link><Link to={"/contact-one"} className={"button black-border-button w-inline-block"}><div>{"Became a teacher"}</div></Link></div></div></div></section>);}
+export function CourseOneCategory1() {
+  const { tab, setTab, yearly, setYearly } = useReference();
 
-export function FooterOne4(){const {tab,setTab,yearly,setYearly}=useReference();return (<footer className={"footer-one"}><div className={"w-layout-blockcontainer container w-container"}><div className={"w-layout-hflex footer-one-main"}><div className={"w-layout-vflex footer-links-wrap"}><Link to={"/home-one"} className={"w-inline-block"}><img src={"/assets/66c6fb8bf82fe9cef5f78d65_Elearna.svg"} loading={"lazy"} width={"105"} height={"26"} alt={"Elearna"} className={"elerna"} /></Link><p className={"no-margin-bottom"}>{"Lorem ipsum dolor sit amet consectetur. Posuere vitae lacus quis eget amet ut tristique cras."}</p></div><div className={"w-layout-vflex footer-links-wrap-two"}><div className={"heading-five text-white"}>{"Quick links"}</div><div className={"w-layout-vflex links-wrap"}><Link to={"/home-one"} className={"footer-link-hover"}>{"Home"}</Link><Link to={"/contact-one"} className={"footer-link-hover"}>{"Events"}</Link><Link to={"/contact-one"} className={"footer-link-hover"}>{"Career"}</Link><Link to={"/about-one"} className={"footer-link-hover"}>{"Instructor"}</Link></div></div><div className={"w-layout-vflex footer-links-wrap-two"}><div className={"heading-five text-white"}>{"Popular courses"}</div><div className={"w-layout-vflex links-wrap"}><Link to={"/course-one?category=Finance"} className={"footer-link-hover"}>{"Finance"}</Link><Link to={"/course-one?category=Management"} className={"footer-link-hover"}>{"Management"}</Link><Link to={"/course-one?category=Design"} className={"footer-link-hover"}>{"Design"}</Link><Link to={"/course-one?category=Development"} className={"footer-link-hover"}>{"Web development"}</Link></div></div><div className={"w-layout-vflex footer-links-wrap-two"}><div className={"heading-five text-white"}>{"Company"}</div><div className={"w-layout-vflex links-wrap"}><Link to={"/about-one"} className={"footer-link-hover"}>{"About"}</Link><Link to={"/course-one"} className={"footer-link-hover"}>{"Courses"}</Link><Link to={"/blog-one"} className={"footer-link-hover"}>{"Blog"}</Link><Link to={"/contact-one"} className={"footer-link-hover"}>{"Contact"}</Link><Link to={"/about-one"} className={"footer-link-hover"}>{"License"}</Link><Link to={"/pricing-one"} className={"footer-link-hover"}>{"Pricing"}</Link><Link to={"/home-one"} className={"footer-link-hover"}>{"404"}</Link></div></div><div className={"w-layout-vflex footer-links-wrap-two"}><div className={"heading-five text-white"}>{"CMS"}</div><div className={"w-layout-vflex links-wrap"}><Link to={"/course-one"} className={"footer-link-hover"}>{"Course details"}</Link><Link to={"/about-one"} className={"footer-link-hover"}>{"Instructor details"}</Link><Link to={"/blog/3"} className={"footer-link-hover"}>{"Blog details"}</Link></div></div></div></div><div className={"w-layout-blockcontainer footer-container w-container"}><div className={"border-one"}></div><div className={"w-layout-hflex footer-bottom-main"}><div className={"footer-bottom-text"}>{"Design by "}<a href={"http://radianttemplates.com/"} target={"_blank"} className={"footer-bottom-link"}>{"Radiant Templates"}</a></div><div className={"footer-bottom-text"}>{"Powered by "}<a href={"https://webflow.com/?r=0"} target={"_blank"} className={"footer-bottom-link"}>{"Webflow"}</a></div></div></div></footer>);}
+  return (
+    <section className={"course-one-category"}>
+      <div className={"w-layout-blockcontainer container w-container"}>
+        <div className={"course-one-category-main"}>
+          <Link
+            to={"/course-one?category=Design"}
+            className={"course-one-category-cards w-inline-block"}
+          >
+            <div className={"category-icons-wrap"}>
+              <img
+                src={"/assets/66c6fb8b9d9bcd0e5de94637_Category_Icons.svg"}
+                loading={"lazy"}
+                width={"Auto"}
+                height={"Auto"}
+                alt={"Icon"}
+              />
+            </div>
 
-export default function ReferencePage(){return <ReferenceProvider><CourseOneHero0/><CourseOneCategory1/><CourseOneStore2/><CtaOne3/><FooterOne4/></ReferenceProvider>}
+            <div className={"heading-six margin-bottom-five category-text"}>
+              {"Web design and creative"}
+            </div>
+
+            <div>{"8 Courses"}</div>
+          </Link>
+
+          <Link
+            to={"/course-one?category=Finance"}
+            className={"course-one-category-cards w-inline-block"}
+          >
+            <div className={"category-icons-wrap"}>
+              <img
+                src={"/assets/66c6fb8b98a2dc7066c693d3_Category_Icons-2.svg"}
+                loading={"lazy"}
+                width={"Auto"}
+                height={"Auto"}
+                alt={"Icon"}
+              />
+            </div>
+
+            <div className={"heading-six margin-bottom-five category-text"}>
+              {"Finance and accounting"}
+            </div>
+
+            <div>{"4 Courses"}</div>
+          </Link>
+
+          <Link
+            to={"/course-one?category=Development"}
+            className={"course-one-category-cards w-inline-block"}
+          >
+            <div className={"category-icons-wrap"}>
+              <img
+                src={"/assets/66c6fb8b2ae1000d4215a423_Category_Icons-3.svg"}
+                loading={"lazy"}
+                width={"Auto"}
+                height={"Auto"}
+                alt={"Icon"}
+              />
+            </div>
+
+            <div className={"heading-six margin-bottom-five category-text"}>
+              {"IT and software"}
+            </div>
+
+            <div>{"5 Courses"}</div>
+          </Link>
+
+          <Link
+            to={"/course-one?category=Management"}
+            className={"course-one-category-cards w-inline-block"}
+          >
+            <div className={"category-icons-wrap"}>
+              <img
+                src={"/assets/66c6fb94416128e5b4e355b0_Category_Icons-4.svg"}
+                loading={"lazy"}
+                width={"Auto"}
+                height={"Auto"}
+                alt={"Icon"}
+              />
+            </div>
+
+            <div className={"heading-six margin-bottom-five category-text"}>
+              {"Digital marketing"}
+            </div>
+
+            <div>{"4 Courses"}</div>
+          </Link>
+
+          <Link
+            to={"/course-one?category=Development"}
+            className={"course-one-category-cards w-inline-block"}
+          >
+            <div className={"category-icons-wrap"}>
+              <img
+                src={"/assets/66c6fb8b035ebd8829061041_Category_Icons-5.svg"}
+                loading={"lazy"}
+                width={"Auto"}
+                height={"Auto"}
+                alt={"Icon"}
+              />
+            </div>
+
+            <div className={"heading-six margin-bottom-five category-text"}>
+              {"Web development"}
+            </div>
+
+            <div>{"8 Courses"}</div>
+          </Link>
+
+          <Link
+            to={"/course-one?category=Design"}
+            className={"course-one-category-cards w-inline-block"}
+          >
+            <div className={"category-icons-wrap"}>
+              <img
+                src={"/assets/66c6fb8bf82fe9cef5f78d2f_Category_Icons-6.svg"}
+                loading={"lazy"}
+                width={"Auto"}
+                height={"Auto"}
+                alt={"Icon"}
+              />
+            </div>
+
+            <div className={"heading-six margin-bottom-five category-text"}>
+              {"Content and language"}
+            </div>
+
+            <div>{"3 Courses"}</div>
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function CourseOneStore2() {
+  const { tab, setTab, yearly, setYearly } = useReference();
+
+  return (
+    <section className={"course-one-store"}>
+      <div className={"w-layout-blockcontainer container w-container"}>
+        <div className={"w-layout-vflex"}>
+          <div className={"small-heading text-dark"}>
+            {"Online learning"}
+          </div>
+
+          <h2 className={"heading-two-gap-top course-one-store-heading"}>
+            {"Popular courses"}
+          </h2>
+
+          <div className={"courses-pagination w-tabs"}>
+            <div className={"courses-tab-content w-tab-content"}>
+              {/* Tab 1 */}
+              <div
+                className={"w-tab-pane w--tab-active"}
+                style={{ display: tab === "Tab 1" ? "block" : "none" }}
+              >
+                <div className={"courses-cards-wrapper"}>
+                  {/* Course 1: Corporate Finance */}
+                  <div className={"w-dyn-list"}>
+                    <div role={"list"} className={"w-dyn-items"}>
+                      <div role={"listitem"} className={"w-dyn-item"}>
+                        <div className={"courser-card-one"}>
+                          <Link
+                            to={"/courses/8"}
+                            className={"course-card-image-wrapper w-inline-block"}
+                          >
+                            <img
+                              className={"course-card-image"}
+                              src={"/assets/6710bb2b1bfbb88a06696c70_Course_Image-4.webp"}
+                              width={"410"}
+                              height={"254"}
+                              alt={"Course Image"}
+                              loading={"lazy"}
+                            />
+                          </Link>
+
+                          <div className={"w-layout-vflex course-content"}>
+                            <div className={"small-shot-heading margin-bottom-twenty"}>
+                              {"Finance"}
+                            </div>
+
+                            <div className={"heading-four course-heading"}>
+                              {"Understanding corporate finance and investments"}
+                            </div>
+
+                            <div className={"w-layout-hflex course-rating"}>
+                              <img
+                                width={"79"}
+                                height={"19"}
+                                alt={""}
+                                src={"/assets/66c6fb8b857efb6c4c737b5d_Rating.svg"}
+                                loading={"lazy"}
+                              />
+
+                              <div className={"small-shot-heading small-heading-body-color"}>
+                                {"4.88 (210)"}
+                              </div>
+                            </div>
+
+                            <div className={"cards-wrap"}>
+                              <div className={"course-cards-button-wrapper course-cards-information"}>
+                                <div className={"cards-button-left"}>
+                                  <div className={"w-layout-hflex course-information"}>
+                                    <img
+                                      width={"16"}
+                                      height={"16"}
+                                      alt={"Icon"}
+                                      src={"/assets/66c6fb8b420a4f79326c2e96_Books.svg"}
+                                      loading={"lazy"}
+                                    />
+
+                                    <div className={"menu-font text-dark"}>
+                                      {"10 Lessons"}
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div className={"cards-button-right"}>
+                                  <div className={"w-layout-hflex course-information align-right"}>
+                                    <img
+                                      width={"12"}
+                                      height={"14"}
+                                      alt={"Icon"}
+                                      src={"/assets/66c6fb8b73655bcf79451768_Person.svg"}
+                                      loading={"lazy"}
+                                    />
+
+                                    <div className={"menu-font text-dark"}>
+                                      {"8k Enrolled"}
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div className={"course-cards-button-wrapper course-cards-button free-card"}>
+                                <div className={"cards-button-left cousers-button-wrapper-border border-off"}>
+                                  <div className={"buttons-hover-show"}>
+                                    <Link
+                                      to={"/courses/8"}
+                                      className={"button button-yellow course-button w-inline-block"}
+                                    >
+                                      <div>{"Course Details"}</div>
+                                    </Link>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div className={"course-price-wrapper"}>
+                              <div>{"Free"}</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Course 2: Photoshop */}
+                  <div className={"w-dyn-list"}>
+                    <div role={"list"} className={"w-dyn-items"}>
+                      <div role={"listitem"} className={"w-dyn-item"}>
+                        <div className={"courser-card-one"}>
+                          <Link
+                            to={"/courses/1"}
+                            className={"course-card-image-wrapper w-inline-block"}
+                          >
+                            <img
+                              className={"course-card-image"}
+                              src={"/assets/6710bcf4976ba1d072d8b476_Course_Image-4-2.webp"}
+                              width={"410"}
+                              height={"254"}
+                              alt={"Course Image"}
+                              loading={"lazy"}
+                            />
+                          </Link>
+
+                          <div className={"w-layout-vflex course-content"}>
+                            <div className={"small-shot-heading margin-bottom-twenty"}>
+                              {"Design"}
+                            </div>
+
+                            <div className={"heading-four course-heading"}>
+                              {"Advanced photoshop techniques for designers"}
+                            </div>
+
+                            <div className={"w-layout-hflex course-rating"}>
+                              <img
+                                width={"79"}
+                                height={"19"}
+                                alt={""}
+                                src={"/assets/66c6fb8b857efb6c4c737b5d_Rating.svg"}
+                                loading={"lazy"}
+                              />
+
+                              <div className={"small-shot-heading small-heading-body-color"}>
+                                {"5.00 (1.2K)"}
+                              </div>
+                            </div>
+
+                            <div className={"cards-wrap"}>
+                              <div className={"course-cards-button-wrapper course-cards-information"}>
+                                <div className={"cards-button-left"}>
+                                  <div className={"w-layout-hflex course-information"}>
+                                    <img
+                                      width={"16"}
+                                      height={"16"}
+                                      alt={"Icon"}
+                                      src={"/assets/66c6fb8b420a4f79326c2e96_Books.svg"}
+                                      loading={"lazy"}
+                                    />
+
+                                    <div className={"menu-font text-dark"}>
+                                      {"8 Lessons"}
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div className={"cards-button-right"}>
+                                  <div className={"w-layout-hflex course-information align-right"}>
+                                    <img
+                                      width={"12"}
+                                      height={"14"}
+                                      alt={"Icon"}
+                                      src={"/assets/66c6fb8b73655bcf79451768_Person.svg"}
+                                      loading={"lazy"}
+                                    />
+
+                                    <div className={"menu-font text-dark"}>
+                                      {"25k Enrolled"}
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div className={"course-cards-button-wrapper course-cards-button free-card"}>
+                                <div className={"cards-button-left cousers-button-wrapper-border border-off"}>
+                                  <div className={"buttons-hover-show"}>
+                                    <Link
+                                      to={"/courses/1"}
+                                      className={"button button-yellow course-button w-inline-block"}
+                                    >
+                                      <div>{"Course Details"}</div>
+                                    </Link>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div className={"course-price-wrapper"}>
+                              <div>{"Free"}</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Course 3: Crisis Management */}
+                  <div className={"w-dyn-list"}>
+                    <div role={"list"} className={"w-dyn-items"}>
+                      <div role={"listitem"} className={"w-dyn-item"}>
+                        <div className={"courser-card-one"}>
+                          <Link
+                            to={"/courses/0"}
+                            className={"course-card-image-wrapper w-inline-block"}
+                          >
+                            <img
+                              className={"course-card-image"}
+                              src={"/assets/6710c8cf232065a7046261dc_Course_Image-7.webp"}
+                              width={"410"}
+                              height={"254"}
+                              alt={"Course Image"}
+                              loading={"lazy"}
+                            />
+                          </Link>
+
+                          <div className={"w-layout-vflex course-content"}>
+                            <div className={"small-shot-heading margin-bottom-twenty"}>
+                              {"Management"}
+                            </div>
+
+                            <div className={"heading-four course-heading"}>
+                              {"Crisis management and problem-solving strategies"}
+                            </div>
+
+                            <div className={"w-layout-hflex course-rating"}>
+                              <img
+                                width={"79"}
+                                height={"19"}
+                                alt={""}
+                                src={"/assets/66c6fb8b857efb6c4c737b5d_Rating.svg"}
+                                loading={"lazy"}
+                              />
+
+                              <div className={"small-shot-heading small-heading-body-color"}>
+                                {"4.88 (210)"}
+                              </div>
+                            </div>
+
+                            <div className={"cards-wrap"}>
+                              <div className={"course-cards-button-wrapper course-cards-information"}>
+                                <div className={"cards-button-left"}>
+                                  <div className={"w-layout-hflex course-information"}>
+                                    <img
+                                      width={"16"}
+                                      height={"16"}
+                                      alt={"Icon"}
+                                      src={"/assets/66c6fb8b420a4f79326c2e96_Books.svg"}
+                                      loading={"lazy"}
+                                    />
+
+                                    <div className={"menu-font text-dark"}>
+                                      {"6 Lessons"}
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div className={"cards-button-right"}>
+                                  <div className={"w-layout-hflex course-information align-right"}>
+                                    <img
+                                      width={"12"}
+                                      height={"14"}
+                                      alt={"Icon"}
+                                      src={"/assets/66c6fb8b73655bcf79451768_Person.svg"}
+                                      loading={"lazy"}
+                                    />
+
+                                    <div className={"menu-font text-dark"}>
+                                      {"8k Enrolled"}
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div className={"course-cards-button-wrapper course-cards-button free-card"}>
+                                <div className={"cards-button-left cousers-button-wrapper-border border-off"}>
+                                  <div className={"buttons-hover-show"}>
+                                    <Link
+                                      to={"/courses/0"}
+                                      className={"button button-yellow course-button w-inline-block"}
+                                    >
+                                      <div>{"Course Details"}</div>
+                                    </Link>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div className={"course-price-wrapper"}>
+                              <div>{"Free"}</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Course 4: Angular */}
+                  <div className={"w-dyn-list"}>
+                    <div role={"list"} className={"w-dyn-items"}>
+                      <div role={"listitem"} className={"w-dyn-item"}>
+                        <div className={"courser-card-one"}>
+                          <Link
+                            to={"/course-one"}
+                            className={"course-card-image-wrapper w-inline-block"}
+                          >
+                            <img
+                              className={"course-card-image"}
+                              src={"/assets/66eb9dfb3e87f8984b5a15b6_Course_Small_Image.webp"}
+                              width={"410"}
+                              height={"254"}
+                              alt={"Building single page applications with angular"}
+                              loading={"lazy"}
+                            />
+                          </Link>
+
+                          <div className={"w-layout-vflex course-content"}>
+                            <div className={"small-shot-heading margin-bottom-twenty"}>
+                              {"Development"}
+                            </div>
+
+                            <div className={"heading-four course-heading"}>
+                              {"Building single page applications with angular"}
+                            </div>
+
+                            <div className={"w-layout-hflex course-rating"}>
+                              <img
+                                width={"79"}
+                                height={"19"}
+                                alt={""}
+                                src={"/assets/66c6fb8b857efb6c4c737b5d_Rating.svg"}
+                                loading={"lazy"}
+                              />
+
+                              <div className={"small-shot-heading small-heading-body-color"}>
+                                {"5.00 (328)"}
+                              </div>
+                            </div>
+
+                            <div className={"cards-wrap"}>
+                              <div className={"course-cards-button-wrapper course-cards-information"}>
+                                <div className={"cards-button-left"}>
+                                  <div className={"w-layout-hflex course-information"}>
+                                    <img
+                                      width={"16"}
+                                      height={"16"}
+                                      alt={"Icon"}
+                                      src={"/assets/66c6fb8b420a4f79326c2e96_Books.svg"}
+                                      loading={"lazy"}
+                                    />
+
+                                    <div className={"menu-font text-dark"}>
+                                      {"6 Lessons"}
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div className={"cards-button-right"}>
+                                  <div className={"w-layout-hflex course-information align-right"}>
+                                    <img
+                                      width={"12"}
+                                      height={"14"}
+                                      alt={"Icon"}
+                                      src={"/assets/66c6fb8b73655bcf79451768_Person.svg"}
+                                      loading={"lazy"}
+                                    />
+
+                                    <div className={"menu-font text-dark"}>
+                                      {"12k Enrolled"}
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div className={"course-cards-button-wrapper course-cards-button free-card"}>
+                                <div className={"cards-button-left cousers-button-wrapper-border border-off"}>
+                                  <div className={"buttons-hover-show"}>
+                                    <Link
+                                      to={"/course-one"}
+                                      className={"button button-yellow course-button w-inline-block"}
+                                    >
+                                      <div>{"Course Details"}</div>
+                                    </Link>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div className={"course-price-wrapper"}>
+                              <div>{"Free"}</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Course 5: MongoDB */}
+                  <div className={"w-dyn-list"}>
+                    <div role={"list"} className={"w-dyn-items"}>
+                      <div role={"listitem"} className={"w-dyn-item"}>
+                        <div className={"courser-card-one"}>
+                          <Link
+                            to={"/courses/3"}
+                            className={"course-card-image-wrapper w-inline-block"}
+                          >
+                            <img
+                              className={"course-card-image"}
+                              src={"/assets/66eb9e1184c0c12d2244968d_Course_Small_Image-9.webp"}
+                              width={"410"}
+                              height={"254"}
+                              alt={"Database integration with MongoDB"}
+                              loading={"lazy"}
+                            />
+                          </Link>
+
+                          <div className={"w-layout-vflex course-content"}>
+                            <div className={"small-shot-heading margin-bottom-twenty"}>
+                              {"Development"}
+                            </div>
+
+                            <div className={"heading-four course-heading"}>
+                              {"Database integration with MongoDB"}
+                            </div>
+
+                            <div className={"w-layout-hflex course-rating"}>
+                              <img
+                                width={"79"}
+                                height={"19"}
+                                alt={""}
+                                src={"/assets/66c6fb8b857efb6c4c737b5d_Rating.svg"}
+                                loading={"lazy"}
+                              />
+
+                              <div className={"small-shot-heading small-heading-body-color"}>
+                                {"4.49 (756)"}
+                              </div>
+                            </div>
+
+                            <div className={"cards-wrap"}>
+                              <div className={"course-cards-button-wrapper course-cards-information"}>
+                                <div className={"cards-button-left"}>
+                                  <div className={"w-layout-hflex course-information"}>
+                                    <img
+                                      width={"16"}
+                                      height={"16"}
+                                      alt={"Icon"}
+                                      src={"/assets/66c6fb8b420a4f79326c2e96_Books.svg"}
+                                      loading={"lazy"}
+                                    />
+
+                                    <div className={"menu-font text-dark"}>
+                                      {"10 Lessons"}
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div className={"cards-button-right"}>
+                                  <div className={"w-layout-hflex course-information align-right"}>
+                                    <img
+                                      width={"12"}
+                                      height={"14"}
+                                      alt={"Icon"}
+                                      src={"/assets/66c6fb8b73655bcf79451768_Person.svg"}
+                                      loading={"lazy"}
+                                    />
+
+                                    <div className={"menu-font text-dark"}>
+                                      {"7k Enrolled"}
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div className={"course-cards-button-wrapper course-cards-button"}>
+                                <div className={"cards-button-left cousers-button-wrapper-border"}>
+                                  <div className={"buttons-hover-show"}>
+                                    <Link
+                                      to={"/courses/3"}
+                                      className={"button button-yellow course-button w-inline-block"}
+                                    >
+                                      <div>{"Course Details"}</div>
+                                    </Link>
+                                  </div>
+                                </div>
+
+                                <div className={"cards-button-right"}>
+                                  <div className={"buttons-hover-show"}>
+                                    <Link
+                                      to={"/courses/3"}
+                                      className={"button button-border-off course-button w-inline-block"}
+                                    >
+                                      <div>{"Enroll"}</div>
+                                    </Link>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div className={"course-price-wrapper"}>
+                              <div>{"$59 "}</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Course 6: MERN Stack */}
+                  <div className={"w-dyn-list"}>
+                    <div role={"list"} className={"w-dyn-items"}>
+                      <div role={"listitem"} className={"w-dyn-item"}>
+                        <div className={"courser-card-one"}>
+                          <Link
+                            to={"/courses/5"}
+                            className={"course-card-image-wrapper w-inline-block"}
+                          >
+                            <img
+                              className={"course-card-image"}
+                              src={"/assets/66eb9e61096e930736b651e4_Course_Small_Image-5.webp"}
+                              width={"410"}
+                              height={"254"}
+                              alt={"Full-stack development with the MERN stack"}
+                              loading={"lazy"}
+                            />
+                          </Link>
+
+                          <div className={"w-layout-vflex course-content"}>
+                            <div className={"small-shot-heading margin-bottom-twenty"}>
+                              {"Development"}
+                            </div>
+
+                            <div className={"heading-four course-heading"}>
+                              {"Full-stack development with the MERN stack"}
+                            </div>
+
+                            <div className={"w-layout-hflex course-rating"}>
+                              <img
+                                width={"79"}
+                                height={"19"}
+                                alt={""}
+                                src={"/assets/66c6fb8b857efb6c4c737b5d_Rating.svg"}
+                                loading={"lazy"}
+                              />
+
+                              <div className={"small-shot-heading small-heading-body-color"}>
+                                {"5.00 (985)"}
+                              </div>
+                            </div>
+
+                            <div className={"cards-wrap"}>
+                              <div className={"course-cards-button-wrapper course-cards-information"}>
+                                <div className={"cards-button-left"}>
+                                  <div className={"w-layout-hflex course-information"}>
+                                    <img
+                                      width={"16"}
+                                      height={"16"}
+                                      alt={"Icon"}
+                                      src={"/assets/66c6fb8b420a4f79326c2e96_Books.svg"}
+                                      loading={"lazy"}
+                                    />
+
+                                    <div className={"menu-font text-dark"}>
+                                      {"12 Lessons"}
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div className={"cards-button-right"}>
+                                  <div className={"w-layout-hflex course-information align-right"}>
+                                    <img
+                                      width={"12"}
+                                      height={"14"}
+                                      alt={"Icon"}
+                                      src={"/assets/66c6fb8b73655bcf79451768_Person.svg"}
+                                      loading={"lazy"}
+                                    />
+
+                                    <div className={"menu-font text-dark"}>
+                                      {"22k Enrolled"}
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div className={"course-cards-button-wrapper course-cards-button"}>
+                                <div className={"cards-button-left cousers-button-wrapper-border"}>
+                                  <div className={"buttons-hover-show"}>
+                                    <Link
+                                      to={"/courses/5"}
+                                      className={"button button-yellow course-button w-inline-block"}
+                                    >
+                                      <div>{"Course Details"}</div>
+                                    </Link>
+                                  </div>
+                                </div>
+
+                                <div className={"cards-button-right"}>
+                                  <div className={"buttons-hover-show"}>
+                                    <Link
+                                      to={"/courses/5"}
+                                      className={"button button-border-off course-button w-inline-block"}
+                                    >
+                                      <div>{"Enroll"}</div>
+                                    </Link>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div className={"course-price-wrapper"}>
+                              <div>{"$72 "}</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Tab 2 */}
+              <div
+                className={"w-tab-pane"}
+                style={{ display: tab === "Tab 2" ? "block" : "none" }}
+              >
+                <div className={"courses-cards-wrapper"}>
+                  {/* Course 7: Personal and Business Finance */}
+                  <div className={"w-dyn-list"}>
+                    <div role={"list"} className={"w-dyn-items"}>
+                      <div role={"listitem"} className={"w-dyn-item"}>
+                        <div className={"courser-card-one"}>
+                          <Link
+                            to={"/course-one"}
+                            className={"course-card-image-wrapper w-inline-block"}
+                          >
+                            <img
+                              className={"course-card-image"}
+                              src={"/assets/66eb9ece25b132baef1462d5_Course_Small_Image-3.webp"}
+                              width={"410"}
+                              height={"254"}
+                              alt={""}
+                              loading={"lazy"}
+                            />
+                          </Link>
+
+                          <div className={"w-layout-vflex course-content"}>
+                            <div className={"small-shot-heading margin-bottom-twenty"}>
+                              {"Finance"}
+                            </div>
+
+                            <div className={"heading-four course-heading"}>
+                              {"The complete guide to personal and business finance"}
+                            </div>
+
+                            <div className={"w-layout-hflex course-rating"}>
+                              <img
+                                width={"79"}
+                                height={"19"}
+                                alt={""}
+                                src={"/assets/66c6fb8b857efb6c4c737b5d_Rating.svg"}
+                                loading={"lazy"}
+                              />
+
+                              <div className={"small-shot-heading small-heading-body-color"}>
+                                {"4.88 (210)"}
+                              </div>
+                            </div>
+
+                            <div className={"cards-wrap"}>
+                              <div className={"course-cards-button-wrapper course-cards-information"}>
+                                <div className={"cards-button-left"}>
+                                  <div className={"w-layout-hflex course-information"}>
+                                    <img
+                                      width={"16"}
+                                      height={"16"}
+                                      alt={"Icon"}
+                                      src={"/assets/66c6fb8b420a4f79326c2e96_Books.svg"}
+                                      loading={"lazy"}
+                                    />
+
+                                    <div className={"menu-font text-dark"}>
+                                      {"10 Lessons"}
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div className={"cards-button-right"}>
+                                  <div className={"w-layout-hflex course-information align-right"}>
+                                    <img
+                                      width={"12"}
+                                      height={"14"}
+                                      alt={"Icon"}
+                                      src={"/assets/66c6fb8b73655bcf79451768_Person.svg"}
+                                      loading={"lazy"}
+                                    />
+
+                                    <div className={"menu-font text-dark"}>
+                                      {"8k Enrolled"}
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div className={"course-cards-button-wrapper course-cards-button"}>
+                                <div className={"cards-button-left cousers-button-wrapper-border"}>
+                                  <div className={"buttons-hover-show"}>
+                                    <Link
+                                      to={"/course-one"}
+                                      className={"button button-yellow course-button w-inline-block"}
+                                    >
+                                      <div>{"Course Details"}</div>
+                                    </Link>
+                                  </div>
+                                </div>
+
+                                <div className={"cards-button-right"}>
+                                  <div className={"buttons-hover-show"}>
+                                    <Link
+                                      to={"/course-one"}
+                                      className={"button button-border-off course-button w-inline-block"}
+                                    >
+                                      <div>{"Enroll"}</div>
+                                    </Link>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div className={"course-price-wrapper"}>
+                              <div>{"$99 "}</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Course 8: Interactive Web Design */}
+                  <div className={"w-dyn-list"}>
+                    <div role={"list"} className={"w-dyn-items"}>
+                      <div role={"listitem"} className={"w-dyn-item"}>
+                        <div className={"courser-card-one"}>
+                          <Link
+                            to={"/courses/7"}
+                            className={"course-card-image-wrapper w-inline-block"}
+                          >
+                            <img
+                              className={"course-card-image"}
+                              src={"/assets/66eba4fcd2cfcf11fe70ccfe_Course_Small_Image-4.webp"}
+                              width={"410"}
+                              height={"254"}
+                              alt={"Learn interactive Web Design by building real projects"}
+                              loading={"lazy"}
+                            />
+                          </Link>
+
+                          <div className={"w-layout-vflex course-content"}>
+                            <div className={"small-shot-heading margin-bottom-twenty"}>
+                              {"Design"}
+                            </div>
+
+                            <div className={"heading-four course-heading"}>
+                              {"Learn interactive Web Design by building real projects"}
+                            </div>
+
+                            <div className={"w-layout-hflex course-rating"}>
+                              <img
+                                width={"79"}
+                                height={"19"}
+                                alt={""}
+                                src={"/assets/66c6fb8b857efb6c4c737b5d_Rating.svg"}
+                                loading={"lazy"}
+                              />
+
+                              <div className={"small-shot-heading small-heading-body-color"}>
+                                {"4.49 (756)"}
+                              </div>
+                            </div>
+
+                            <div className={"cards-wrap"}>
+                              <div className={"course-cards-button-wrapper course-cards-information"}>
+                                <div className={"cards-button-left"}>
+                                  <div className={"w-layout-hflex course-information"}>
+                                    <img
+                                      width={"16"}
+                                      height={"16"}
+                                      alt={"Icon"}
+                                      src={"/assets/66c6fb8b420a4f79326c2e96_Books.svg"}
+                                      loading={"lazy"}
+                                    />
+
+                                    <div className={"menu-font text-dark"}>
+                                      {"12 Lessons"}
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div className={"cards-button-right"}>
+                                  <div className={"w-layout-hflex course-information align-right"}>
+                                    <img
+                                      width={"12"}
+                                      height={"14"}
+                                      alt={"Icon"}
+                                      src={"/assets/66c6fb8b73655bcf79451768_Person.svg"}
+                                      loading={"lazy"}
+                                    />
+
+                                    <div className={"menu-font text-dark"}>
+                                      {"23k Enrolled"}
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div className={"course-cards-button-wrapper course-cards-button"}>
+                                <div className={"cards-button-left cousers-button-wrapper-border"}>
+                                  <div className={"buttons-hover-show"}>
+                                    <Link
+                                      to={"/courses/7"}
+                                      className={"button button-yellow course-button w-inline-block"}
+                                    >
+                                      <div>{"Course Details"}</div>
+                                    </Link>
+                                  </div>
+                                </div>
+
+                                <div className={"cards-button-right"}>
+                                  <div className={"buttons-hover-show"}>
+                                    <Link
+                                      to={"/courses/7"}
+                                      className={"button button-border-off course-button w-inline-block"}
+                                    >
+                                      <div>{"Enroll"}</div>
+                                    </Link>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div className={"course-price-wrapper"}>
+                              <div>{"$79 "}</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Course 9: Brand Growth */}
+                  <div className={"w-dyn-list"}>
+                    <div role={"list"} className={"w-dyn-items"}>
+                      <div role={"listitem"} className={"w-dyn-item"}>
+                        <div className={"courser-card-one"}>
+                          <Link
+                            to={"/course-one"}
+                            className={"course-card-image-wrapper w-inline-block"}
+                          >
+                            <img
+                              className={"course-card-image"}
+                              src={"/assets/66eb9fb02faddeb03288c28e_Course_Small_Image-2.webp"}
+                              width={"410"}
+                              height={"254"}
+                              alt={"Course Details"}
+                              loading={"lazy"}
+                            />
+                          </Link>
+
+                          <div className={"w-layout-vflex course-content"}>
+                            <div className={"small-shot-heading margin-bottom-twenty"}>
+                              {"Management"}
+                            </div>
+
+                            <div className={"heading-four course-heading"}>
+                              {"Grow your brand and reach your audience"}
+                            </div>
+
+                            <div className={"w-layout-hflex course-rating"}>
+                              <img
+                                width={"79"}
+                                height={"19"}
+                                alt={""}
+                                src={"/assets/66c6fb8b857efb6c4c737b5d_Rating.svg"}
+                                loading={"lazy"}
+                              />
+
+                              <div className={"small-shot-heading small-heading-body-color"}>
+                                {"4.88 (210)"}
+                              </div>
+                            </div>
+
+                            <div className={"cards-wrap"}>
+                              <div className={"course-cards-button-wrapper course-cards-information"}>
+                                <div className={"cards-button-left"}>
+                                  <div className={"w-layout-hflex course-information"}>
+                                    <img
+                                      width={"16"}
+                                      height={"16"}
+                                      alt={"Icon"}
+                                      src={"/assets/66c6fb8b420a4f79326c2e96_Books.svg"}
+                                      loading={"lazy"}
+                                    />
+
+                                    <div className={"menu-font text-dark"}>
+                                      {"10 Lessons"}
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div className={"cards-button-right"}>
+                                  <div className={"w-layout-hflex course-information align-right"}>
+                                    <img
+                                      width={"12"}
+                                      height={"14"}
+                                      alt={"Icon"}
+                                      src={"/assets/66c6fb8b73655bcf79451768_Person.svg"}
+                                      loading={"lazy"}
+                                    />
+
+                                    <div className={"menu-font text-dark"}>
+                                      {"8k Enrolled"}
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div className={"course-cards-button-wrapper course-cards-button"}>
+                                <div className={"cards-button-left cousers-button-wrapper-border"}>
+                                  <div className={"buttons-hover-show"}>
+                                    <Link
+                                      to={"/course-one"}
+                                      className={"button button-yellow course-button w-inline-block"}
+                                    >
+                                      <div>{"Course Details"}</div>
+                                    </Link>
+                                  </div>
+                                </div>
+
+                                <div className={"cards-button-right"}>
+                                  <div className={"buttons-hover-show"}>
+                                    <Link
+                                      to={"/course-one"}
+                                      className={"button button-border-off course-button w-inline-block"}
+                                    >
+                                      <div>{"Enroll"}</div>
+                                    </Link>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div className={"course-price-wrapper"}>
+                              <div>{"$49 "}</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Course 10: Design Systems */}
+                  <div className={"w-dyn-list"}>
+                    <div role={"list"} className={"w-dyn-items"}>
+                      <div role={"listitem"} className={"w-dyn-item"}>
+                        <div className={"courser-card-one"}>
+                          <Link
+                            to={"/courses/6"}
+                            className={"course-card-image-wrapper w-inline-block"}
+                          >
+                            <img
+                              className={"course-card-image"}
+                              src={"/assets/66fe66442929de6e874b3284_Course_Image.webp"}
+                              width={"410"}
+                              height={"254"}
+                              alt={"Design systems and pattern libraries"}
+                              loading={"lazy"}
+                            />
+                          </Link>
+
+                          <div className={"w-layout-vflex course-content"}>
+                            <div className={"small-shot-heading margin-bottom-twenty"}>
+                              {"Design"}
+                            </div>
+
+                            <div className={"heading-four course-heading"}>
+                              {"Design systems and pattern libraries"}
+                            </div>
+
+                            <div className={"w-layout-hflex course-rating"}>
+                              <img
+                                width={"79"}
+                                height={"19"}
+                                alt={""}
+                                src={"/assets/66c6fb8b857efb6c4c737b5d_Rating.svg"}
+                                loading={"lazy"}
+                              />
+
+                              <div className={"small-shot-heading small-heading-body-color"}>
+                                {"5.00 (1.2K)"}
+                              </div>
+                            </div>
+
+                            <div className={"cards-wrap"}>
+                              <div className={"course-cards-button-wrapper course-cards-information"}>
+                                <div className={"cards-button-left"}>
+                                  <div className={"w-layout-hflex course-information"}>
+                                    <img
+                                      width={"16"}
+                                      height={"16"}
+                                      alt={"Icon"}
+                                      src={"/assets/66c6fb8b420a4f79326c2e96_Books.svg"}
+                                      loading={"lazy"}
+                                    />
+
+                                    <div className={"menu-font text-dark"}>
+                                      {"8 Lessons"}
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div className={"cards-button-right"}>
+                                  <div className={"w-layout-hflex course-information align-right"}>
+                                    <img
+                                      width={"12"}
+                                      height={"14"}
+                                      alt={"Icon"}
+                                      src={"/assets/66c6fb8b73655bcf79451768_Person.svg"}
+                                      loading={"lazy"}
+                                    />
+
+                                    <div className={"menu-font text-dark"}>
+                                      {"25k Enrolled"}
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div className={"course-cards-button-wrapper course-cards-button"}>
+                                <div className={"cards-button-left cousers-button-wrapper-border"}>
+                                  <div className={"buttons-hover-show"}>
+                                    <Link
+                                      to={"/courses/6"}
+                                      className={"button button-yellow course-button w-inline-block"}
+                                    >
+                                      <div>{"Course Details"}</div>
+                                    </Link>
+                                  </div>
+                                </div>
+
+                                <div className={"cards-button-right"}>
+                                  <div className={"buttons-hover-show"}>
+                                    <Link
+                                      to={"/courses/6"}
+                                      className={"button button-border-off course-button w-inline-block"}
+                                    >
+                                      <div>{"Enroll"}</div>
+                                    </Link>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div className={"course-price-wrapper"}>
+                              <div>{"$99 "}</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Course 11: Operations Management */}
+                  <div className={"w-dyn-list"}>
+                    <div role={"list"} className={"w-dyn-items"}>
+                      <div role={"listitem"} className={"w-dyn-item"}>
+                        <div className={"courser-card-one"}>
+                          <Link
+                            to={"/courses/2"}
+                            className={"course-card-image-wrapper w-inline-block"}
+                          >
+                            <img
+                              className={"course-card-image"}
+                              src={"/assets/66eb9e25c4d132b7abc4dcb2_Course_Small_Image-8.webp"}
+                              width={"410"}
+                              height={"254"}
+                              alt={"Course Details"}
+                              loading={"lazy"}
+                            />
+                          </Link>
+
+                          <div className={"w-layout-vflex course-content"}>
+                            <div className={"small-shot-heading margin-bottom-twenty"}>
+                              {"Finance"}
+                            </div>
+
+                            <div className={"heading-four course-heading"}>
+                              {"Operations management and process improvement"}
+                            </div>
+
+                            <div className={"w-layout-hflex course-rating"}>
+                              <img
+                                width={"79"}
+                                height={"19"}
+                                alt={""}
+                                src={"/assets/66c6fb8b857efb6c4c737b5d_Rating.svg"}
+                                loading={"lazy"}
+                              />
+
+                              <div className={"small-shot-heading small-heading-body-color"}>
+                                {"5.00 (812)"}
+                              </div>
+                            </div>
+
+                            <div className={"cards-wrap"}>
+                              <div className={"course-cards-button-wrapper course-cards-information"}>
+                                <div className={"cards-button-left"}>
+                                  <div className={"w-layout-hflex course-information"}>
+                                    <img
+                                      width={"16"}
+                                      height={"16"}
+                                      alt={"Icon"}
+                                      src={"/assets/66c6fb8b420a4f79326c2e96_Books.svg"}
+                                      loading={"lazy"}
+                                    />
+
+                                    <div className={"menu-font text-dark"}>
+                                      {"12 Lessons"}
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div className={"cards-button-right"}>
+                                  <div className={"w-layout-hflex course-information align-right"}>
+                                    <img
+                                      width={"12"}
+                                      height={"14"}
+                                      alt={"Icon"}
+                                      src={"/assets/66c6fb8b73655bcf79451768_Person.svg"}
+                                      loading={"lazy"}
+                                    />
+
+                                    <div className={"menu-font text-dark"}>
+                                      {"23k Enrolled"}
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div className={"course-cards-button-wrapper course-cards-button free-card"}>
+                                <div className={"cards-button-left cousers-button-wrapper-border border-off"}>
+                                  <div className={"buttons-hover-show"}>
+                                    <Link
+                                      to={"/courses/2"}
+                                      className={"button button-yellow course-button w-inline-block"}
+                                    >
+                                      <div>{"Course Details"}</div>
+                                    </Link>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div className={"course-price-wrapper"}>
+                              <div>{"Free"}</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Course 12: Risk Management */}
+                  <div className={"w-dyn-list"}>
+                    <div role={"list"} className={"w-dyn-items"}>
+                      <div role={"listitem"} className={"w-dyn-item"}>
+                        <div className={"courser-card-one"}>
+                          <Link
+                            to={"/courses/4"}
+                            className={"course-card-image-wrapper w-inline-block"}
+                          >
+                            <img
+                              className={"course-card-image"}
+                              src={"/assets/66eb9e363f6e47ec5245cf09_Course_Small_Image-7.webp"}
+                              width={"410"}
+                              height={"254"}
+                              alt={"Risk management and business continuity"}
+                              loading={"lazy"}
+                            />
+                          </Link>
+
+                          <div className={"w-layout-vflex course-content"}>
+                            <div className={"small-shot-heading margin-bottom-twenty"}>
+                              {"Management"}
+                            </div>
+
+                            <div className={"heading-four course-heading"}>
+                              {"Risk management and business continuity"}
+                            </div>
+
+                            <div className={"w-layout-hflex course-rating"}>
+                              <img
+                                width={"79"}
+                                height={"19"}
+                                alt={""}
+                                src={"/assets/66c6fb8b857efb6c4c737b5d_Rating.svg"}
+                                loading={"lazy"}
+                              />
+
+                              <div className={"small-shot-heading small-heading-body-color"}>
+                                {"4.88 (210)"}
+                              </div>
+                            </div>
+
+                            <div className={"cards-wrap"}>
+                              <div className={"course-cards-button-wrapper course-cards-information"}>
+                                <div className={"cards-button-left"}>
+                                  <div className={"w-layout-hflex course-information"}>
+                                    <img
+                                      width={"16"}
+                                      height={"16"}
+                                      alt={"Icon"}
+                                      src={"/assets/66c6fb8b420a4f79326c2e96_Books.svg"}
+                                      loading={"lazy"}
+                                    />
+
+                                    <div className={"menu-font text-dark"}>
+                                      {"3 Lessons"}
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div className={"cards-button-right"}>
+                                  <div className={"w-layout-hflex course-information align-right"}>
+                                    <img
+                                      width={"12"}
+                                      height={"14"}
+                                      alt={"Icon"}
+                                      src={"/assets/66c6fb8b73655bcf79451768_Person.svg"}
+                                      loading={"lazy"}
+                                    />
+
+                                    <div className={"menu-font text-dark"}>
+                                      {"8k Enrolled"}
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div className={"course-cards-button-wrapper course-cards-button"}>
+                                <div className={"cards-button-left cousers-button-wrapper-border"}>
+                                  <div className={"buttons-hover-show"}>
+                                    <Link
+                                      to={"/courses/4"}
+                                      className={"button button-yellow course-button w-inline-block"}
+                                    >
+                                      <div>{"Course Details"}</div>
+                                    </Link>
+                                  </div>
+                                </div>
+
+                                <div className={"cards-button-right"}>
+                                  <div className={"buttons-hover-show"}>
+                                    <Link
+                                      to={"/courses/4"}
+                                      className={"button button-border-off course-button w-inline-block"}
+                                    >
+                                      <div>{"Enroll"}</div>
+                                    </Link>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div className={"course-price-wrapper"}>
+                              <div>{"$49 "}</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Pagination buttons */}
+            <div className={"courses-pagination-menu w-tab-menu"}>
+              <button
+                type="button"
+                onClick={() => setTab("Tab 1")}
+                aria-pressed={tab === "Tab 1"}
+                className={
+                  "tab-nav-link w-inline-block w-tab-link " +
+                  (tab === "Tab 1" ? " w--current" : "")
+                }
+              >
+                <div>{" 1"}</div>
+              </button>
+
+              <button
+                type="button"
+                onClick={() => setTab("Tab 2")}
+                aria-pressed={tab === "Tab 2"}
+                className={
+                  "tab-nav-link w-inline-block w-tab-link" +
+                  (tab === "Tab 2" ? " w--current" : "")
+                }
+              >
+                <div>{"2"}</div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function CtaOne3() {
+  const { tab, setTab, yearly, setYearly } = useReference();
+
+  return (
+    <section className={"cta-one"}>
+      <div className={"w-layout-blockcontainer container w-container"}>
+        <div className={"w-layout-hflex cta-main"}>
+          <div className={"heading-three cta-heading"}>
+            {"Are you ready to start your journey?"}
+          </div>
+
+          <div className={"w-layout-hflex cta-button-wrapper"}>
+            <Link
+              to={"/course-one"}
+              className={"button button-border-off w-inline-block w--current"}
+            >
+              <div>{"Browse courses"}</div>
+            </Link>
+
+            <Link
+              to={"/contact-one"}
+              className={"button black-border-button w-inline-block"}
+            >
+              <div>{"Became a teacher"}</div>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function FooterOne4() {
+  const { tab, setTab, yearly, setYearly } = useReference();
+
+  return (
+    <footer className={"footer-one"}>
+      <div className={"w-layout-blockcontainer container w-container"}>
+        <div className={"w-layout-hflex footer-one-main"}>
+          <div className={"w-layout-vflex footer-links-wrap"}>
+            <Link to={"/home-one"} className={"w-inline-block"}>
+              <img
+                src={"/assets/66c6fb8bf82fe9cef5f78d65_Elearna.svg"}
+                loading={"lazy"}
+                width={"105"}
+                height={"26"}
+                alt={"Elearna"}
+                className={"elerna"}
+              />
+            </Link>
+
+            <p className={"no-margin-bottom"}>
+              {"Lorem ipsum dolor sit amet consectetur. Posuere vitae lacus quis eget amet ut tristique cras."}
+            </p>
+          </div>
+
+          <div className={"w-layout-vflex footer-links-wrap-two"}>
+            <div className={"heading-five text-white"}>
+              {"Quick links"}
+            </div>
+
+            <div className={"w-layout-vflex links-wrap"}>
+              <Link to={"/home-one"} className={"footer-link-hover"}>
+                {"Home"}
+              </Link>
+
+              <Link to={"/contact-one"} className={"footer-link-hover"}>
+                {"Events"}
+              </Link>
+
+              <Link to={"/contact-one"} className={"footer-link-hover"}>
+                {"Career"}
+              </Link>
+
+              <Link to={"/about-one"} className={"footer-link-hover"}>
+                {"Instructor"}
+              </Link>
+            </div>
+          </div>
+
+          <div className={"w-layout-vflex footer-links-wrap-two"}>
+            <div className={"heading-five text-white"}>
+              {"Popular courses"}
+            </div>
+
+            <div className={"w-layout-vflex links-wrap"}>
+              <Link
+                to={"/course-one?category=Finance"}
+                className={"footer-link-hover"}
+              >
+                {"Finance"}
+              </Link>
+
+              <Link
+                to={"/course-one?category=Management"}
+                className={"footer-link-hover"}
+              >
+                {"Management"}
+              </Link>
+
+              <Link
+                to={"/course-one?category=Design"}
+                className={"footer-link-hover"}
+              >
+                {"Design"}
+              </Link>
+
+              <Link
+                to={"/course-one?category=Development"}
+                className={"footer-link-hover"}
+              >
+                {"Web development"}
+              </Link>
+            </div>
+          </div>
+
+          <div className={"w-layout-vflex footer-links-wrap-two"}>
+            <div className={"heading-five text-white"}>
+              {"Company"}
+            </div>
+
+            <div className={"w-layout-vflex links-wrap"}>
+              <Link to={"/about-one"} className={"footer-link-hover"}>
+                {"About"}
+              </Link>
+
+              <Link to={"/course-one"} className={"footer-link-hover"}>
+                {"Courses"}
+              </Link>
+
+              <Link to={"/blog-one"} className={"footer-link-hover"}>
+                {"Blog"}
+              </Link>
+
+              <Link to={"/contact-one"} className={"footer-link-hover"}>
+                {"Contact"}
+              </Link>
+
+              <Link to={"/about-one"} className={"footer-link-hover"}>
+                {"License"}
+              </Link>
+
+              <Link to={"/pricing-one"} className={"footer-link-hover"}>
+                {"Pricing"}
+              </Link>
+
+              <Link to={"/home-one"} className={"footer-link-hover"}>
+                {"404"}
+              </Link>
+            </div>
+          </div>
+
+          <div className={"w-layout-vflex footer-links-wrap-two"}>
+            <div className={"heading-five text-white"}>
+              {"CMS"}
+            </div>
+
+            <div className={"w-layout-vflex links-wrap"}>
+              <Link to={"/course-one"} className={"footer-link-hover"}>
+                {"Course details"}
+              </Link>
+
+              <Link to={"/about-one"} className={"footer-link-hover"}>
+                {"Instructor details"}
+              </Link>
+
+              <Link to={"/blog/3"} className={"footer-link-hover"}>
+                {"Blog details"}
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={"w-layout-blockcontainer footer-container w-container"}>
+        <div className={"border-one"}></div>
+
+        <div className={"w-layout-hflex footer-bottom-main"}>
+          <div className={"footer-bottom-text"}>
+            {"Design by "}
+            <a
+              href={"http://radianttemplates.com/"}
+              target={"_blank"}
+              className={"footer-bottom-link"}
+            >
+              {"Radiant Templates"}
+            </a>
+          </div>
+
+          <div className={"footer-bottom-text"}>
+            {"Powered by "}
+            <a
+              href={"https://webflow.com/?r=0"}
+              target={"_blank"}
+              className={"footer-bottom-link"}
+            >
+              {"Webflow"}
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+export default function ReferencePage() {
+  return (
+    <ReferenceProvider>
+      <CourseOneHero0 />
+      <CourseOneCategory1 />
+      <CourseOneStore2 />
+      <CtaOne3 />
+      <FooterOne4 />
+    </ReferenceProvider>
+  );
+}
